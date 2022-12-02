@@ -210,7 +210,7 @@ public class Movie extends BaseObservable implements Parcelable {
         parcel.writeValue(this.adult);
         parcel.writeString(this.overview);
         parcel.writeString(this.releaseDate);
-        parcel.writeList(this.genreIds);
+//        parcel.writeList(this.genreIds);
         parcel.writeValue(this.id);
         parcel.writeString(this.originalTitle);
         parcel.writeString(this.originalLanguage);
@@ -249,7 +249,7 @@ public class Movie extends BaseObservable implements Parcelable {
         this.overview = in.readString();
         this.releaseDate = in.readString();
         this.genreIds = new ArrayList<Integer>();
-        in.readList(this.genreIds, Integer.class.getClassLoader());
+//        in.readList(this.genreIds, Integer.class.getClassLoader());
         this.id = (Integer) in.readValue(Integer.class.getClassLoader());
         this.originalTitle = in.readString();
         this.originalLanguage = in.readString();
